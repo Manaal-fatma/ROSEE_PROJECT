@@ -32,7 +32,7 @@ Follow these simple steps to get the entire project running on your PC.
 a) First, download the ZIP or clone the repository.
 
 b) Then open your terminal and run the following commands for each folder (frontend, backend, admin):
-
+```
 cd frontend
 
 npm install
@@ -44,23 +44,23 @@ npm install
 cd ../admin
 
 npm install
-
+```
 🧪 2. Create .env Files
 ---
 You need to create .env files inside each folder and simply copy paste the following in them.
 
 🔹 Frontend .env
-
+```
 REACT_APP_BACKEND_URL=http://localhost:4000
-
+```
 🔹 Admin .env
-
+```
 VITE_BACKEND_URL=http://localhost:4000
-
+```
 This connects your frontend/admin with the backend server running locally.
 
 🔹 Backend .env:
-
+```
 PORT=4000
 
 MONGODB_URI=your_mongodb_uri
@@ -76,10 +76,10 @@ JWT_SECRET=your_jwt_secret
 ADMIN_EMAIL=your_admin_email
 
 ADMIN_PASSWORD=your_admin_password
-
+```
 🔁 Replace all the your_... values with your actual credentials and remember not to give space before and after the equal to "=" sign. Here’s how to get them:
 
-🧰 3. Required Accounts & Setup
+🧰 3. Required Accounts & Setup 
 ---
 🗄️ MONGODB SETUP
 
@@ -98,9 +98,9 @@ b) Copy your API Key, Secret, and Cloud name, then paste them in .env.
 🔐 JWT SECRET
 
 You can set any random strong string like:
-
+```
 JWT_SECRET=thisisaverysecuretoken123
-
+```
 🧑‍💼 ADMIN LOGIN
 
 Set any email and password in your backend .env.
@@ -109,26 +109,26 @@ You’ll use these to log into the admin panel.
 
 🖥️ 4. Start the App
 ---
-Start the servers in the following order:
+Start the servers in the following order in different terminals:
 
 🟢 Backend
-
+```
 cd backend
 
 npm run index
-
+```
 🟡 Frontend
-
+```
 cd frontend
 
 npm start
-
+```
 🔵 Admin Panel
-
+```
 cd admin
 
 npm run dev
-
+```
 ✅ Now you can open the site in your browser!
 
 Frontend: http://localhost:3000
