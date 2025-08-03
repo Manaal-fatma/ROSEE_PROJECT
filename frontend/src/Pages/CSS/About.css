@@ -1,0 +1,257 @@
+/* About.css */
+
+.about-container {
+  font-family: 'Poppins', sans-serif;
+  color: #4a4a4a;
+  background: #fff7f8;
+  overflow-x: hidden;
+  padding-bottom: 4rem;
+}
+
+/* HERO SECTION */
+.about-hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #ffe1e8, #fff7f8);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text {
+  flex: 1 1 45%;
+  z-index: 2;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #dc6c84;
+  margin-bottom: 1rem;
+}
+
+p.about-tagline {
+  font-size: 1.2rem; /* Slightly larger for emphasis */
+  font-style: italic;
+  font-weight: 500;
+  color: #4b4b4b; /* Soft charcoal for a gentle, thoughtful feel */
+  margin-top: 0.5rem;
+  text-align: left;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+
+.hero-img {
+  flex: 1 1 45%;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ABOUT SECTIONS */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.about-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1 1 45%;
+  animation: fadeInUp 1.5s ease;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #b2617c;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #5f4c4c;
+}
+
+.about-img {
+  flex: 1 1 45%;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 1rem;
+  animation: zoomIn 2s ease forwards;
+  opacity: 0;
+}
+
+.animate-pop {
+  transform: scale(0.8);
+  transition: all 0.6s ease;
+}
+
+.animate-pop:hover {
+  transform: scale(1);
+}
+
+/* FEATURES SECTION */
+.about-extra {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-extra h2 {
+  font-size: 2rem;
+  color: #c4728e;
+  margin-bottom: 3rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: #ffeaf0;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(255, 182, 193, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: bounceIn 1s ease forwards;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.feature-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  animation: float 5s ease-in-out infinite;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #674b4b;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(255, 182, 193, 0.4);
+}
+
+/* ANIMATION DELAYS */
+.delay-1 {
+  animation-delay: 0.5s;
+}
+
+.delay-2 {
+  animation-delay: 1s;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-20px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-hero, .about-section {
+    flex-direction: column;
+  }
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+  .about-text h2, .about-extra h2 {
+    font-size: 1.5rem;
+  }
+}

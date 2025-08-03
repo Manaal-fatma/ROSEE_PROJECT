@@ -1,0 +1,40 @@
+.popular-container {
+  align-items: center;
+  gap: 10px;
+  padding: 40px;
+  min-height: 100vh;
+  background: white;
+  
+}
+
+.popular-title {
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #444;
+  margin-top: 50px;
+  
+}
+
+
+
+.popular-items {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
+  .popular-items {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .popular-items {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+}

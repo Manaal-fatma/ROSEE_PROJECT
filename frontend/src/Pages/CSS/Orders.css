@@ -1,0 +1,111 @@
+/* Orders.css */
+
+.order-container {
+  padding: 40px 60px;
+  background: #fffdfc;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.order-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #d42c62;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #f3c7cf;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(211, 49, 93, 0.1);
+  transition: all 0.3s ease;
+}
+
+.order-item:hover {
+  box-shadow: 0 6px 16px rgba(211, 49, 93, 0.15);
+}
+
+.order-details {
+  display: flex;
+  gap: 20px;
+}
+
+.order-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+}
+
+.order-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.order-meta p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.order-date {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.order-light {
+  color: #777;
+}
+
+.order-status-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.order-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #1cb05c;
+  border-radius: 50%;
+}
+
+.status-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1cb05c;
+}
+
+.track-btn {
+  background-color: #ff6699;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.track-btn:hover {
+  background-color: #e05887;
+}

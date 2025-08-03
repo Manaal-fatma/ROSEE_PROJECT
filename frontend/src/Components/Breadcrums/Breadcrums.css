@@ -1,0 +1,40 @@
+.breadcrums{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 600;
+    margin: 6-px 170px;
+    text-transform: capitalize;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+@media(maxd-width: 1280px) {
+    .breadcrums {
+        margin: 30px 50px;
+        font-size: 14px;
+    }
+}
+
+@media(maxd-width: 1024px) {
+    .breadcrums {
+        margin: 30px 30px;
+        font-size: 13px;
+    }
+}
+
+@media(maxd-width: 800px) {
+    .breadcrums {
+        margin: 30px 10px;
+        font-size: 12px;
+    }
+}
+
+@media(maxd-width: 500px) {
+    .breadcrums {
+        font-size: 10px;
+    }
+}
