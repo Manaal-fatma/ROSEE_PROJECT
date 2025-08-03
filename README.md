@@ -81,7 +81,7 @@ ADMIN_PASSWORD=your_admin_password
 
 🧰 3. Required Accounts & Setup
 ---
-🗄️ MongoDB Setup
+🗄️ MONGODB SETUP
 
 a) Go to MongoDB Atlas https://www.mongodb.com and create a free account.
 
@@ -89,19 +89,19 @@ b) Create a cluster → Database → Collection.
 
 c) Copy the connection string (MongoDB URI) and paste it into MONGODB_URI.
 
-☁️ Cloudinary Setup
+☁️ CLOUDINARY SETUP
 
 a) Go to Cloudinary https://cloudinary.com and sign up.
 
 b) Copy your API Key, Secret, and Cloud name, then paste them in .env.
 
-🔐 JWT Secret
+🔐 JWT SECRET
 
 You can set any random strong string like:
 
 JWT_SECRET=thisisaverysecuretoken123
 
-🧑‍💼 Admin Login
+🧑‍💼 ADMIN LOGIN
 
 Set any email and password in your backend .env.
 
