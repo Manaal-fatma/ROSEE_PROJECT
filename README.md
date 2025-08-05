@@ -47,7 +47,7 @@ npm install
 ```
 🧪 2. Create .env Files
 ---
-You need to create .env files inside each folder and simply copy paste the following in them.
+You need to create .env files inside each folder if not already there and simply copy paste the following in them.
 
 🔹 Frontend .env
 ```
