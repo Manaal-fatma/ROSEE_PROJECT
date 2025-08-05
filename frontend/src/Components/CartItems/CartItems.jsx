@@ -8,7 +8,7 @@ const CartItems = () => {
     const{getTotalCartAmount,products,cartItems,removeFromCart, navigate} = useContext(ShopContext);
     const Amount = getTotalCartAmount();
     const {isLoggedIn} = useContext(ShopContext);
-
+    
 
     const handleCheckout = () => {
     if (!isLoggedIn) {
@@ -18,6 +18,15 @@ const CartItems = () => {
       });
       return;
     }
+    const isCartEmpty = Object.values(cartItems).every(quantity => quantity === 0);
+
+  if (isCartEmpty) {
+    toast.warn("Please add items to the cart before proceeding!", {
+      position: "top-right",
+      autoClose: 2000,
+    });
+    return;
+  }
     navigate('/place-order');
   };
 
@@ -39,7 +48,7 @@ const CartItems = () => {
         {
            return  <div key={e._id}>
                       <div className="cartitems-format cartitems-format-main ">
-                        <img src={e.image} alt="" className='carticon-product-icon' />
+                        <img src={e.image[0]} alt="" className='carticon-product-icon' />
                         <p>{e.name}</p>
                         <p>${e.price}</p>
                         <button className='cartitems-quantity'>{cartItems[e._id]}</button>

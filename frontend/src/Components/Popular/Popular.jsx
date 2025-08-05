@@ -29,7 +29,8 @@ const filteredProducts2 = products.filter((product) =>
 
   return (
     <div className="popular-container">
-      <h2 className="popular-title">🌟POPULAR IN JOURNALS</h2>
+      <h2 className="popular-title">🌟POPULAR IN JOURNALS(*^_^*)</h2>
+      <p className="emotive-line">“For your thoughts, your dreams, your chaos — these pages are waiting just for you. Let your heart rest here.💗”</p>
       <hr/>
       <div className="popular-items">
         {filteredProducts.slice(0, 4).map((product) => (
@@ -45,7 +46,8 @@ const filteredProducts2 = products.filter((product) =>
 
      
 
-      <h2 className="popular-title">🌟POPULAR IN WASHI TAPES</h2>
+      <h2 className="popular-title">🌟POPULAR IN WASHI TAPES(*^▽^*)</h2>
+      <p className="emotive-line">“Little rolls of love — to wrap your world with you-ness, one beautiful detail at a time.💗”</p>
       <hr/>
       <div className="popular-items">
         {filteredProducts1.slice(0, 4).map((product) => (
@@ -58,10 +60,10 @@ const filteredProducts2 = products.filter((product) =>
           />
         ))}
       </div>
-    
   
       
-      <h2 className="popular-title">🌟POPULAR IN ART SUPPLIES</h2>
+      <h2 className="popular-title">🌟POPULAR IN ART SUPPLIES(❁´◡`❁)</h2>
+      <p className="emotive-line">“You don’t just make art — you leave pieces of yourself in every stroke. These supplies? They’re here to honor that.💗”</p>
       <hr/>
       <div className="popular-items">
         {filteredProducts2.slice(0, 4).map((product) => (

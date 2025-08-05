@@ -94,7 +94,7 @@ const handleStatusChange = async (orderId, newStatus) => {
         <p >Date:{new Date(order.date).toLocaleDateString()}</p>
        </div>
        <p className='text-sm sm:text-[15px] '>
-        {currency()}{order.amount}
+        ${order.amount}
        </p>
       <select
   value={order.status}

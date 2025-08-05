@@ -58,13 +58,11 @@ const Orders = () => {
           <p style={{ marginTop: '20px' }}>No orders found.</p>
         ) : (
           orderData.map((item, index) => (
-              console.log("Item in order:", item),
-             console.log("Image:", item.image),
             <div key={index} className='order-item'>
               <div className='order-details'>
               {item.image && Array.isArray(item.image) && item.image[0] && (
-  <img src={`${backendUrl}/uploads/${item.image[0]}`} alt={item.name} />
-)}
+              <img src={`${backendUrl}/uploads/${item.image[0]}`} alt={item.name} />
+              )}
 
 
                 <div>

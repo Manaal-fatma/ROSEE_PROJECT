@@ -33,6 +33,9 @@ const Login = ({ setToken }) => {
       <div className="max-w-md px-8 py-6 bg-white rounded-lg shadow-md">
         <div className="mb-3 w-fit">
           {/* <img src={assets.logo} alt="Trendify" /> */}
+           <p className="text-4xl sm:text-5xl font-bold tracking-wider text-rose-400 uppercase drop-shadow-sm">
+            ROSÉÉ
+          </p>
         </div>
         <h1 className="mb-4 text-2xl font-bold">Admin Dashboard</h1>
         <form onSubmit={onSubmitHandler}>

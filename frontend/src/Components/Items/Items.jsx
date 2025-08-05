@@ -26,7 +26,7 @@ const Items = ({ id, name, price, image }) => {
     <div className="item-card">
       <Link to={`/product/${id}`}>
       <img onClick={window.scrollTo(0,0)}src={image} alt={name} className='item-image'/>
-      <h3><a className='link'>{name}</a></h3>
+      <h3><a href='./product'className='link'>{name}</a></h3>
       <p className="price">${price}</p>
       </Link>
       <button onClick={handleAddToCart} className="add-btn">Add to Cart</button>

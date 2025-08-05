@@ -1,8 +1,8 @@
 import React, {  useState, useEffect, useContext } from 'react';
 import './CSS/PlaceOrder.css';
 import { ShopContext } from '../Context/ShopContext';
-import stripe_logo from '../Components/Assets/stripe_logo.png';
-import razorpay_logo from '../Components/Assets/razorpay_logo.png';
+// import stripe_logo from '../Components/Assets/stripe_logo.png';
+// import razorpay_logo from '../Components/Assets/razorpay_logo.png';
 import axios from  'axios';
 // import Items from '../Components/Items/Items';
 import { Link } from 'react-router-dom';
@@ -92,7 +92,7 @@ const handlePlaceOrder = async () => {
   ...item,
   image: item.image || [], // Make sure image exists (you can default to [] if unsure)
 }));
-console.log("Final cart with images:", finalCart)
+      // console.log("Final cart with images:", finalCart)
       const response = await axios.post("http://localhost:4000/api/order/place", {
       items: updatedCart,
       amount: totalAmount, // total price
@@ -110,7 +110,7 @@ console.log("Final cart with images:", finalCart)
       console.error("Error placing order", err);
     }
   };
-  // navigate('/place-order');
+ 
 
 
   return (

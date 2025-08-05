@@ -24,7 +24,7 @@ const NewArrivals = () => {
 
   return (
     <div className="new-arrivals">
-      <h2 className="new-arrivals-title">*NEW ARRIVALS*</h2>
+      <h2 className="new-arrivals-title">💛NEW ARRIVALS(✿◡‿◡)</h2>
       <p className="new-arrivals-subtitle">Check out our latest collections</p>
       <div className="new-arrivals-description">
         <p>Discover the latest additions to our collection, featuring unique designs and high-quality materials. Perfect for those who love to stay ahead of the trends!</p>

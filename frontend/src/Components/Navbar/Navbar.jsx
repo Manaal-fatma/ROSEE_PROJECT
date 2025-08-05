@@ -31,7 +31,7 @@ const Navbar = () => {
   }, []);
 
   // Pages where search bar should appear
- const showSearch = ['/new-arrivals', '/popular', '/shop', '/journals-planners', '/washi-tapes', '/art-supplies', '/stationery'].includes(location.pathname);
+ const showSearch = ['/new-arrivals','/', '/popular', '/shop', '/journals-planners', '/washi-tapes', '/art-supplies', '/stationery'].includes(location.pathname);
 
   return (
     <nav className="navbar-container">
